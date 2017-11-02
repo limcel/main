@@ -19,6 +19,7 @@ import seedu.address.logic.commands.HistoryCommand;
 import seedu.address.logic.commands.ListCommand;
 import seedu.address.logic.commands.RedoCommand;
 import seedu.address.logic.commands.RemarkCommand;
+import seedu.address.logic.commands.ScheduleCommand;
 import seedu.address.logic.commands.SelectCommand;
 import seedu.address.logic.commands.SortCommand;
 import seedu.address.logic.commands.UndoCommand;
@@ -34,6 +35,7 @@ public class AddressBookParser {
      */
     private static final Pattern BASIC_COMMAND_FORMAT = Pattern.compile("(?<commandWord>\\S+)(?<arguments>.*)");
 
+    //@@author lincredibleJC
     /**
      * Parses user input into command for execution.
      *
@@ -62,6 +64,10 @@ public class AddressBookParser {
         case SelectCommand.COMMAND_WORD://Fallthrough
         case SelectCommand.COMMAND_ALIAS:
             return new SelectCommandParser().parse(arguments);
+
+        case ScheduleCommand.COMMAND_WORD://Fallthrough
+        case ScheduleCommand.COMMAND_ALIAS:
+            return new ScheduleCommandParser().parse(arguments);
 
         case DeleteCommand.COMMAND_WORD://Fallthrough
         case DeleteCommand.COMMAND_ALIAS:
@@ -113,5 +119,5 @@ public class AddressBookParser {
             throw new ParseException(MESSAGE_UNKNOWN_COMMAND);
         }
     }
-
+    //@@author
 }

@@ -169,7 +169,7 @@ public class ParserUtilTest {
         assertEquals(expectedEmail, actualEmail.get());
     }
 
-
+    //@@author lincredibleJC
     @Test
     public void parseGrades_null_throwsNullPointerException() throws Exception {
         thrown.expect(NullPointerException.class);
@@ -194,6 +194,7 @@ public class ParserUtilTest {
 
         assertEquals(expectedGrades, actualGrades.get());
     }
+    //@@author
 
     @Test
     public void parseRemark_null_throwsNullPointerException() throws Exception {
@@ -201,6 +202,7 @@ public class ParserUtilTest {
         ParserUtil.parseEmail(null);
     }
 
+    //@@author nahtanojmil
     @Test
     public void parseRemark_invalidValue_throwsIllegalValueException() throws Exception {
         thrown.expect(NullPointerException.class);
@@ -219,6 +221,8 @@ public class ParserUtilTest {
 
         assertEquals(expectedRemark, actualRemark.get());
     }
+    //@@author
+
     @Test
     public void parseTags_null_throwsNullPointerException() throws Exception {
         thrown.expect(NullPointerException.class);
@@ -243,4 +247,16 @@ public class ParserUtilTest {
 
         assertEquals(expectedTagSet, actualTagSet);
     }
+    //@@author limcel
+    @Test
+    public void parseSchedule_null_throwsNullPointerException() throws Exception {
+        thrown.expect(NullPointerException.class);
+        ParserUtil.parseSchedule(null);
+    }
+
+    @Test
+    public void parseSchedule_optionalEmpty_returnsOptionalEmpty() throws Exception {
+        assertFalse(ParserUtil.parseSchedule(Optional.empty()).isPresent());
+    }
+    //@@author
 }

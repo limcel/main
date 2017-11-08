@@ -1,4 +1,4 @@
-package seedu.address.commons.events.ui;
+package seedu.address.commons.events.model;
 
 import javafx.collections.ObservableList;
 import seedu.address.commons.events.BaseEvent;
@@ -6,13 +6,13 @@ import seedu.address.model.person.ReadOnlyPerson;
 
 //@@author lincredibleJC
 /**
- * Represents a Change in the current Filtered List
+ * Represents a Change in the current FilteredPersonList
  */
-public class FilteredListChangedEvent extends BaseEvent {
+public class FilteredPersonListChangedEvent extends BaseEvent {
 
     private final ObservableList<ReadOnlyPerson> currentFilteredList;
 
-    public FilteredListChangedEvent(ObservableList<ReadOnlyPerson> currentFilteredList) {
+    public FilteredPersonListChangedEvent(ObservableList<ReadOnlyPerson> currentFilteredList) {
         this.currentFilteredList = currentFilteredList;
     }
 
@@ -21,7 +21,7 @@ public class FilteredListChangedEvent extends BaseEvent {
         return this.getClass().getSimpleName();
     }
 
-    public ObservableList<ReadOnlyPerson> getCurrentFilteredList() {
+    public ObservableList<ReadOnlyPerson> getCurrentFilteredPersonList() {
         return currentFilteredList;
     }
 }

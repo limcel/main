@@ -7,7 +7,7 @@ ifdef::env-github,env-browser[:outfilesuffix: .adoc]
 cherBook - is a desktop address book application used for teachers and educators.
 The user interacts with it using a CLI, and it has a GUI created with JavaFX. It is written in Java.
 
-*Code contributed*: [https://github.com/limcel/main/blob/master/collated/main/limcel.md[Functional code]] [https://github.com/limcel/main/blob/master/collated/test/limcel.md[Test code]] {give links to collated code files}
+*Code contributed*: [https://github.com/limcel/main/blob/master/collated/main/limcel.md[Functional code]] [https://github.com/limcel/main/blob/master/collated/test/limcel.md[Test code]]
 
 === Enhancement Added: Sort Command [v1.2]
 

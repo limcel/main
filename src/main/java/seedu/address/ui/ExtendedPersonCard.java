@@ -7,6 +7,7 @@ import com.google.common.eventbus.Subscribe;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import seedu.address.commons.core.LogsCenter;
@@ -25,7 +26,7 @@ public class ExtendedPersonCard extends UiPart<Region> {
     private ObservableList<ReadOnlyPerson> people;
 
     @FXML
-    private VBox cardpane;
+    private GridPane gridPane;
     @FXML
     private Label name;
     @FXML

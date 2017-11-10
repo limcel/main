@@ -65,7 +65,7 @@ e.g. typing *`help`* and pressing kbd:[Enter] will open the help window.
 
 The following image highlights cherBook's User Interface and its 6 components.
 
-image::UILayout.png[width="790"]
+image::UiLayout.png[width="790"]
 _Figure 4.1 : cherBook's User Interface layout_
 
 Here’s how you can use them:

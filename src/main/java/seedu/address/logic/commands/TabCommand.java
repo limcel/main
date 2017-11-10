@@ -6,7 +6,7 @@ import seedu.address.commons.events.ui.JumpToTabRequestEvent;
 import seedu.address.logic.commands.exceptions.CommandException;
 
 /**
- * Changes the graphs shown on the graph panel in the address book.
+ * Changes the graphs tabs shown on the graph panel in the address book.
  */
 //@@author limcel
 public class TabCommand extends Command {

@@ -651,8 +651,8 @@ In version v1.3, you are be able to:
 In version v1.4, you are be able to:
 
 * View statistics of the current list of students from the `Statistics Panel`
-* Use the `ScheduleCommand` to add a schedule into your schedule list
 * Have automated assignment of different colours to different tags according to suitable RGB values
+* Use the `ScheduleCommand` to add a schedule into your schedule list
 
 === Features added in v1.5
 In version v1.5, you are be able to:

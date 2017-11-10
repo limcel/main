@@ -30,7 +30,7 @@ public class XmlAdaptedSchedule {
     /**
      * Converts a given Schedule into this class for JAXB use.
      *
-     * @param source future changes to this will not affect the created XmlAdaptedPerson
+     * @param source future changes to this will not affect the created XmlAdaptedSchedule
      */
     public XmlAdaptedSchedule(Schedule source) {
         name = source.getPersonName();

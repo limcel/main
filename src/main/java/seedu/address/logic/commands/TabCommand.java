@@ -20,12 +20,12 @@ public class TabCommand extends Command {
     public static final String MESSAGE_INVALID_TAB_INDEX = "Invalid Tab Value";
 
     // there are only 2 types of graphs available for display (Graph / Bar)
-    public static final int NUM_TAB = 2;
+    public static final int tabNumber = 2;
 
     private final Index targetIndex;
 
     /**
-     * @param targetIndex of the TabPane in the graph panel for switching
+     * Selects @param targetIndex of the TabPane in the graph panel for switching
      */
     public TabCommand(Index targetIndex) {
         this.targetIndex = targetIndex;
@@ -33,7 +33,7 @@ public class TabCommand extends Command {
 
     @Override
     public CommandResult execute() throws CommandException {
-        if (targetIndex.getZeroBased() >= NUM_TAB) {
+        if (targetIndex.getZeroBased() >= tabNumber) {
             throw new CommandException(MESSAGE_INVALID_TAB_INDEX);
         }
         EventsCenter.getInstance().post(new JumpToTabRequestEvent(targetIndex));
